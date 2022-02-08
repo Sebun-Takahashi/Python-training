@@ -3,10 +3,10 @@ import pandas as pd
 import tweepy
 # 各種ツイッターのキーをセット
 # 各種ツイッターのキーをセット　consumer_key, consumer_secret, access_key, access_secret
-consumer_key = "B925YvNgSiiG6odErMBCO3mDk"
-consumer_secret = "AfKI707H8eB7CYO2DBxmSd8EskdJj3LWMek1PKaDkVk40qbB3c"
-access_key = "1206923034830860289-F0uZXitPOy6YUNT9Amar1uw6Q93OdI"
-access_secret = "vbW3ViVYrqukWZ24OVl8AwyL22nYQ9g8g31HmWM18pvJb"
+consumer_key = ""
+consumer_secret = ""
+access_key = ""
+access_secret = ""
 # 認証のためのAPIキーをセット
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
