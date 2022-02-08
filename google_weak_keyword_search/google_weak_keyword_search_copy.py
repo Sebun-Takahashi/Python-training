@@ -37,7 +37,7 @@ def main():
     # options.add_argument('--headless')
 
     # ChromeのWebDriverオブジェクトを作成
-    driver = webdriver.Chrome(options=options, executable_path=r"C:\Users\sebun takahashi\Desktop\Python tutorial\google_weak_keyword_search\chromedriver.exe")
+    driver = webdriver.Chrome(options=options, executable_path=r"")
 
     driver.get(URL)  # Googleのトップページを開く
 
