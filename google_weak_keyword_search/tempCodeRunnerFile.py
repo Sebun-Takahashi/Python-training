@@ -1,1 +1,0 @@
-with open('ドメインリスト.txt', encoding="utf-8") as f:
