@@ -46,7 +46,7 @@ def get_access_token():
     '''
     アクセストークンをテキストファイルから取得する
     '''
-    with open(r'C:\Users\sebun takahashi\Desktop\Python tutorial\language-rank\token.txt', 'r') as f:
+    with open(r'', 'r') as f:
         return f.read().strip()
 
 
