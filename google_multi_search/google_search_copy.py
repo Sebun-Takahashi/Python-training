@@ -28,10 +28,10 @@ scope = ['https://www.googleapis.com/auth/spreadsheets',
 # 認証情報設定
 # ダウンロードしたjsonファイル名をクレデンシャル変数に設定（秘密鍵、Pythonファイルから読み込みしやすい位置に置く）
 credentials = Credentials.from_service_account_file(
-    "google_multi_search\my-project-20210221-1cbe90a30fa2.json", scopes=scope)
+    "", scopes=scope)
 
 # 共有設定したスプレッドシートキーを格納
-SPREADSHERET_KEY = '1H1i5FqWVkfGRZ9T2z1Ro6toGCw5xzRk5IVPyEapdzhw'
+SPREADSHERET_KEY = ''
 
 
 def main():
