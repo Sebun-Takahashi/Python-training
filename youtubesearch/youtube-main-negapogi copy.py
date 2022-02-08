@@ -16,17 +16,17 @@ def main():
     # 認証情報設定
     # ダウンロードしたjsonファイル名をクレデンシャル変数に設定
     credentials = Credentials.from_service_account_file(
-        r"C:\Users\sebun takahashi\Desktop\Python tutorial\google_multi_search\my-project-20210221-1cbe90a30fa2.json", scopes=scope)
+        r"", scopes=scope)
     # OAuth2の資格情報を使用してGoogle APIにログインします。
     gc = gspread.authorize(credentials)
     # 共有設定したスプレッドシートキーを変数[SPREADSHEET_KEY]に格納する。
-    SPREADSHEET_KEY = '1soYHUIEpPtpl_efuyLAOzNlFkekyOVx0XQdWNC3wBlk'
+    SPREADSHEET_KEY = ''
     # 共有設定したスプレッドシートの検索キーワードシートを開く
     worksheet = gc.open_by_key(SPREADSHEET_KEY).worksheet('検索キーワード')
     keyword_list = worksheet.col_values(1)
 
     # Youtube APIキーの記入
-    api_key = 'AIzaSyB7i8PWtuEVaVCbUwm_f8dK1TRod1F4640'
+    api_key = ''
     # 今から24時間前の時刻をfromtimeとする（今の時刻のタイムゾーンはYoutubeに合わせて協定世界時刻のutcにする)
     fromtime = '2021-01+01T00:00:00Z'
 
