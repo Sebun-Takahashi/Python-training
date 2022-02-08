@@ -17,7 +17,7 @@ def main():
     # 銘柄コードの入力
     stock_code = 6758
     # Seleniumでダウンロードするデフォルトディレクトリ
-    download_directory = r"C:\Users\sebun takahashi\Desktop\Python tutorial\prophet\stockdata"
+    download_directory = r""
     # CSVのダウンロードの実行
     download(download_directory, year, this_year, stock_code)
     # ダンロードしたデータフレームの結合
@@ -39,7 +39,7 @@ def download(download_directory, year, this_year, stock_code):
     options.add_experimental_option("prefs", prefs)
     # オプションを指定してクロームドライバーの起動
     driver = webdriver.Chrome(
-        options=options, executable_path=r"C:\Users\sebun takahashi\Desktop\Python tutorial\chromedriver.exe")
+        options=options, executable_path=r"")
     # 要素が見つからなかった時の待ち時間を指定
     driver.implicitly_wait(30)
 
